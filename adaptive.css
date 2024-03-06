@@ -1,0 +1,29 @@
+/* Для планшетов */
+@media screen and (max-width: 880px) {
+    nav ul li a {
+        font-size: 10px; 
+    }
+}
+
+/* Для телефонов */
+@media screen and (max-width: 735px) {
+    nav,
+    .auth {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 20px ;
+      }
+}
+
+/* Для узких устройств */
+@media screen and (max-width: 425px) {
+    nav,
+    .auth {
+        display: none;
+    }
+}
