@@ -1,0 +1,110 @@
+/* Для 4K */
+@media screen and (min-width: 2560px) {
+    nav ul li a {
+        font-size: 1em; 
+    }
+
+    .info_text h1 {
+        font-size: 3.5em;
+    }
+    .info_text p {
+        font-size: 2em;
+    }
+    .info_text a{
+        font-size: 1.2em;
+    }
+}
+
+/* Для больших ноутбуков */
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+    nav ul li a {
+        font-size: 1em; 
+    }
+
+    .info_text h1 {
+        font-size: 2.8em;
+    }
+    .info_text p {
+        font-size: 1.7em;
+    }
+    .info_text a{
+        font-size: 1em;
+    }
+}
+
+/* Для ноутбуков */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    nav ul li a {
+        font-size: 0.9em; 
+    }
+
+    .info_text h1 {
+        font-size: 2.3em;
+    }
+    .info_text p {
+        font-size: 1.5em;
+    }
+    .info_text a{
+        font-size: 0.9em;
+    }
+}
+
+/* Для планшетов */
+@media screen and (max-width: 880px) {
+    nav ul li a {
+        font-size: 0.9em; 
+    }
+
+    .info_text h1 {
+        font-size: 2.5em;
+    }
+    .info_text p {
+        font-size: 1.5em;
+    }
+    .info_text a{
+        font-size: 1em;
+    }
+}
+
+/* Для телефонов */
+@media screen and (max-width: 735px) {
+    nav,
+    .auth {
+        display: none;
+    }
+
+    .info_text h1 {
+        font-size: 2em;
+    }
+    .info_text p {
+        font-size: 1.3em;
+    }
+    .info_text a{
+        font-size: 0.8em;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding-right: 1em;
+    }
+}
+
+/* Для узких устройств */
+@media screen and (max-width: 425px) {
+    nav,
+    .auth {
+        display: none;
+    }
+
+    .info_text h1 {
+        font-size: 1.5em;
+    }
+    .info_text p {
+        font-size: 1em;
+    }
+    .info_text a{
+        font-size: 0.7em;
+    }
+}
