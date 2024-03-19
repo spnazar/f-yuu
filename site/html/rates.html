@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифы</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            background-color: #ce9e76;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .tariffs {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .tariff {
+            flex-basis: calc(33.33% - 40px);
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .tariff:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tariff h2 {
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .tariff p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .tariff .price {
+            font-size: 2rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Наши тарифы</h1>
+        <div class="tariffs">
+            <div class="tariff">
+                <h2>Базовый</h2>
+                <p>Описание базового тарифа. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="price">$9.99/месяц</div>
+            </div>
+            <div class="tariff">
+                <h2>Стандартный</h2>
+                <p>Описание стандартного тарифа. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="price">$19.99/месяц</div>
+            </div>
+            <div class="tariff">
+                <h2>Премиум</h2>
+                <p>Описание премиум тарифа. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="price">$29.99/месяц</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
