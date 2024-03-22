@@ -1,72 +1,86 @@
-/* Для 4K */
 @media screen and (min-width: 2560px) {
     nav ul li a {
-        font-size: 1em; 
+        font-size: 16px; 
     }
 
     .info_text h1 {
-        font-size: 3.5em;
+        font-size: 56px; 
     }
     .info_text p {
-        font-size: 2em;
+        font-size: 32px; 
     }
-    .info_text a{
-        font-size: 1.2em;
+    .info_text a {
+        font-size: 19.2px; 
     }
 }
 
-/* Для больших ноутбуков */
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
     nav ul li a {
-        font-size: 1em; 
+        font-size: 16px; 
     }
 
     .info_text h1 {
-        font-size: 2.8em;
+        font-size: 44.8px; 
     }
     .info_text p {
-        font-size: 1.7em;
+        font-size: 27.2px; 
     }
-    .info_text a{
-        font-size: 1em;
+    .info_text a {
+        font-size: 16px; 
     }
 }
 
-/* Для ноутбуков */
+
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     nav ul li a {
-        font-size: 0.9em; 
+        font-size: 16px; 
     }
 
     .info_text h1 {
-        font-size: 2.3em;
+        font-size: 36px;
     }
+
     .info_text p {
-        font-size: 1.5em;
+        font-size: 24px; 
     }
-    .info_text a{
-        font-size: 0.9em;
+
+    .info_text a {
+        font-size: 14px;
     }
+
+
 }
 
-/* Для планшетов */
 @media screen and (max-width: 880px) {
+    nav ul {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .burger button {
+        margin-top: 10px;
+    }
+
     nav ul li a {
-        font-size: 0.9em; 
+        font-size: 14.4px; 
     }
 
     .info_text h1 {
-        font-size: 2.5em;
+        font-size: 40px; 
     }
     .info_text p {
-        font-size: 1.5em;
+        font-size: 24px; 
     }
-    .info_text a{
-        font-size: 1em;
+    .info_text a {
+        font-size: 16px; 
     }
 }
 
-/* Для телефонов */
 @media screen and (max-width: 735px) {
     nav,
     .auth {
@@ -74,13 +88,13 @@
     }
 
     .info_text h1 {
-        font-size: 2em;
+        font-size: 32px; 
     }
     .info_text p {
-        font-size: 1.3em;
+        font-size: 20.8px; 
     }
-    .info_text a{
-        font-size: 0.8em;
+    .info_text a {
+        font-size: 12.8px; 
     }
 
     .burger {
@@ -91,7 +105,6 @@
     }
 }
 
-/* Для узких устройств */
 @media screen and (max-width: 425px) {
     nav,
     .auth {
@@ -99,12 +112,12 @@
     }
 
     .info_text h1 {
-        font-size: 1.5em;
+        font-size: 24px; 
     }
     .info_text p {
-        font-size: 1em;
+        font-size: 16px; 
     }
-    .info_text a{
-        font-size: 0.7em;
+    .info_text a {
+        font-size: 11.2px; 
     }
 }

@@ -17,6 +17,7 @@
         .contact-info {
             margin-top: 40px;
             text-align: center;
+            animation: slideInUp 1s forwards;
         }
         .contact-info h2 {
             font-size: 2rem;
@@ -48,6 +49,16 @@
             border-radius: 8px;
             overflow: hidden;
         }
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -57,9 +68,9 @@
         <p>Email: info@example.com</p>
         <p>Адрес: Алматы, Достык 108</p>
         <div class="social-icons">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" style="color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="color: #1da1f2;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: #e1306c;"><i class="fab fa-instagram"></i></a>
             <!-- Добавьте ссылки на свои аккаунты в социальных сетях -->
         </div>
     </div>
