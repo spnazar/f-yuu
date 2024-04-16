@@ -1,0 +1,145 @@
+/* Общие стили */
+
+/* Добавим стили для устройств с максимальной шириной экрана 320px (например, iPhone SE) */
+@media screen and (max-width: 320px) {
+    /* Изменяем размеры шрифтов */
+    .header-title {
+        font-size: 22px;
+    }
+    
+    .header-subtitle {
+        font-size: 12px;
+    }
+
+    /* Изменяем размеры изображений */
+    .header-logo img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+
+/* Добавим стили для мобильных устройств */
+@media screen and (max-width: 480px) {
+    /* Изменяем размеры шрифтов */
+    .header-title {
+        font-size: 24px;
+    }
+    
+    .header-subtitle {
+        font-size: 14px;
+    }
+    
+    /* Изменяем размеры изображений */
+    .header-logo img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+/* Добавим стили для планшетов */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Изменяем размеры шрифтов */
+    .header-title {
+        font-size: 36px;
+    }
+    
+    .header-subtitle {
+        font-size: 18px;
+    }
+}
+
+/* Добавим стили для устройств с шириной экрана 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Изменяем размеры шрифтов */
+    .header-title {
+        font-size: 40px;
+    }
+    
+    .header-subtitle {
+        font-size: 20px;
+    }
+}
+
+/* Добавим стили для устройств с шириной экрана 1440px */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    .header-logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .header-down {
+        position: relative;
+        top: -70px;
+    }
+
+    .header-title {
+        font-size: 22px;
+    }
+    
+    .header-subtitle {
+        font-size: 8px;
+    }
+
+    .header-line {
+        font-size: 12px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+
+    .icons img {
+        height: 20px;
+        height: 20px;
+    }
+
+    .header-button {
+        height: 40px;
+        width: 120px;
+        margin-left: 120px;
+    }
+
+    .button {
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .content-container {
+        position: relative;
+        top: -150px;
+    }
+
+    .block {
+        height: 35px;
+        width: 120px;
+    }
+
+    .block img {
+        max-width: 21%;
+        height: auto;
+    }
+
+    .history-info {
+        margin-right: 70px;
+    }
+
+    .history-title {
+        font-size: 44px;
+    }
+
+    .history-desc {
+        font-size: 20px;
+    }
+
+    .history-img {
+        height: 350px;
+        width: auto;
+    }
+
+    .box {
+        width: 200px;
+    }
+}

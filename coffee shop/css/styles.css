@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+}
+
+.header-logo {
+    margin: 10 166px;
+}
+
+.header {
+    background-image: url(..//img/coffee_image.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+
+    margin-right: 25px;
+    transition: color 0.3s linear;
+}
+.nam:hover {
+    color: rgb(133, 67, 5);
+    transition: color 0.3s linear;
+}
+
+
+.nav-item:hover {
+    color: rgb(133, 67, 5);
+}
+
+.nam {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.icons {
+    display: flex;
+}
+
+.lup,
+.store {
+    margin-right: 10px; /* Уменьшаем расстояние между блоками */
+}
+
+.icons a {
+    display: block; /* Превращаем ссылки в блочные элементы */
+}
+
+.icons img {
+    max-width: 100%; /* Запрещаем изображениям выходить за границы родительских блоков */
+}
+
+.header-down {
+    position: relative;
+}
+
+.header-down .header-subtitle {
+    font-size: 18px; /* Измените размер текста второго блока по вашему усмотрению */
+}
+
+
+.header-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+
+    margin-top: 70px;
+}
+
+.header-subtitle {
+    margin-left: 20px;
+    font-weight: lighter; /* Изменяем толщину шрифта на более тонкую */
+}
+
+.header-button {
+    width: 200px; /* Ширина прямоугольного блока */
+    height: 60px; /* Высота прямоугольного блока */
+    background-color: #725234; /* Цвет фона вокруг каждого блока */
+    border: 1px solid #000000; /* Граница прямоугольного блока */
+    border-radius: 40px; /* Закругление углов прямоугольного блока */
+    display: flex; /* Используем flex для выравнивания кнопки по центру */
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.button {
+    width: 110px; /* Ширина прямоугольного блока */
+    height: 50px; /* Высота прямоугольного блока */
+    padding: 10px 30px; /* Отступы кнопки */
+    font-size: 14px; /* Размер шрифта кнопки */
+    background-color: #000000; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 40px; /* Закругляем углы кнопки */
+    transition: color 0.5s linear;
+}
+
+.button:hover {
+    background-color: #5e2f09; /* Цвет фона кнопки при наведении */
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 360px; /* Перемещаем контейнер вниз */
+}
+
+.blocks {
+    display: flex;
+}
+
+.block {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    background-color: #c4a283; /* Цвет фона вокруг каждого блока */
+    padding: 20px; /* Отступ вокруг каждого блока */
+    border-radius: 10px; /* Закругляем углы фона */
+    margin-right: 20px; /* Регулируйте отступ между блоками по вашему усмотрению */
+    height: 50px;
+    width: 200px; /* Измените значение ширины блока по вашему усмотрению */
+}
+
+.block:last-child {
+    margin-right: 0; /* Убираем отступ у последнего блока */
+}
+
+.block img {
+    max-width: 21%;
+    height: auto;
+}
+
+.content {
+    padding-left: 10px; /* Регулируйте отступ между текстом и фотографией по вашему усмотрению */
+}
+
+.content p {
+    font-size: 16px; /* Регулируйте размер текста по вашему усмотрению */
+    margin: 0;
+}
+
+.order-link {
+    font-size: 14px; /* Регулируйте размер текста ссылки по вашему усмотрению */
+    color: rgb(112, 66, 6); /* Измените цвет ссылки по вашему вкусу */
+    text-decoration: none;
+}
+
+.order-link:hover {
+    text-decoration: underline;
+}
+
+
+/* О НАС */
+
+.history {
+    background-color: #706357;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.history-title {
+    font-family: sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    width: 444px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 100px;
+    color: #5e2f09;
+}
+
+.history-desc {
+    color: rgb(83, 67, 30);
+    font-size: 22px;
+    width: 444px;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 5px;
+    padding: 30px;
+}
+
+.history-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-img {
+    position: relative;
+    margin-right: 500px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+.img1 {
+    position: absolute;
+    z-index: 999;
+    top: 54px;
+    left: -100px;
+
+}
+
+.img2 {
+    position: absolute;
+    z-index: 0;
+    top: -92px;
+    left: 100px;
+}
+
+.history-img img{
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+/* Оформление раздела "Меню" */
+/* Оформление раздела "Меню" */
+.menu {
+    padding: 100px 0; /* Добавляем отступы сверху и снизу */
+    background-color: #666563;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.menu .heading {
+    font-size: 48px; /* Увеличиваем размер заголовка */
+    color: #725234; /* Цвет текста заголовка */
+    margin-bottom: 30px; /* Уменьшаем отступ снизу */
+}
+
+.menu .heading span {
+    color: #d39b46; /* Цвет подзаголовка */
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Расстояние между элементами */
+}
+
+.box {
+    width: 300px; /* Ширина блока */
+    background-color: #fff; /* Цвет фона блока */
+    border-radius: 20px; /* Увеличиваем закругление углов блока */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Тень блока */
+    overflow: hidden; /* Скрываем все, что выходит за пределы блока */
+    transition: transform 0.3s ease; /* Плавное изменение масштаба при наведении */
+}
+
+.box:hover {
+    transform: translateY(-10px); /* Поднимаем блок при наведении */
+}
+
+.box img {
+    width: 100%; /* Ширина изображения */
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Заполняем блок изображением, сохраняя пропорции */
+    border-top-left-radius: 20px; /* Закругление верхних углов */
+    border-top-right-radius: 20px;
+}
+
+.box .content {
+    padding: 20px; /* Отступ внутри содержимого */
+}
+
+.box h3 {
+    font-size: 24px; /* Размер заголовка */
+    color: #725234; /* Цвет текста заголовка */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.box p {
+    font-size: 16px; /* Размер текста */
+    color: #333; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.box span {
+    font-size: 24px; /* Размер цены */
+    color: #d39b46; /* Цвет цены */
+    font-weight: bold; /* Жирный текст */
+}
+
+/* Стили для кнопки "Расширенное меню" */
+.extended-menu-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d39b46;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    margin: 30px auto; /* Располагаем кнопку по центру горизонтально */
+    display: block; /* Превращаем кнопку в блочный элемент */
+    width: fit-content; /* Ширина кнопки равна содержимому */
+}
+
+.extended-menu-btn:hover {
+    background-color: #725234;
+}
+
+
+ /* HTML MENU */
+
+/* Общие стили */
+.menu1 {
+    background-color: #a75a13;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-categories {
+    text-align: center;
+}
+
+.menu-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-categories ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-categories ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu-categories ul li a:hover {
+    color: #d39b46;
+}
+
+/* Стили для разделов меню */
+.section-heading {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Растягиваем изображения на всю область блока */
+    height: 200px; /* Высота изображения */
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.menu-item p.price {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+.order-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d39b46;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #725234;
+}
