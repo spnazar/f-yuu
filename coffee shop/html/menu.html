@@ -11,6 +11,15 @@
 <section class="menu1" id="menu1">
     <h1 class="heading1">Меню</h1>
 
+    <div class="cart-wrapper">
+        <div class="store">
+            <a href="#" class="cart-icon">
+                <img src="../img/shopping.png" alt="">
+            </a>
+        </div> 
+    </div>
+</div>
+
     <!-- Пункты меню -->
     <div class="menu-categories">
         <ul>
@@ -143,7 +152,47 @@
             <!-- Добавьте еще блоки для других видов десертов -->
         </div>
     </div>
+
+    <!-- Модальное окно для отображения корзины -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Мои заказы</h2>
+            <ul id="cart-items">
+                <!-- Здесь будут отображаться выбранные товары -->
+            </ul>
+            <button id="order-now-btn" class="button">Заказать</button>
+            <button id="clear-cart-btn">Очистить</button>
+        </div>
+    </div>
+
+
+    <!-- Второе модальное окно для оформления заказа -->
+    <div id="order-modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформление заказа</h2>
+            <form id="order-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="address">Адрес (необязательно):</label>
+                <input type="text" id="address" name="address">
+                <label for="payment-method">Способ оплаты:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="cash">Наличные</option>
+                    <option value="courier">Оплата курьеру</option>
+                    <option value="invoice">Выставление счета</option>
+                </select>
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+
 </section>
+
+<script src="../js/jsmenu.js"></script>
 
 </body>
 </html>

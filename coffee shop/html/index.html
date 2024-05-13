@@ -17,10 +17,10 @@
             </div>
 
             <div class="nav">
-                <a class="nav-item" href="/home">Главная</a> 
-                <a class="nav-item" href="/about">О нас</a> 
-                <a class="nav-item" href="/menu">Меню</a> 
-                <a class="nav-item" href="/store">Магазин</a> 
+                <a class="nav-item" href="#header">Главная</a> 
+                <a class="nav-item" href="#history">О нас</a> 
+                <a class="nav-item" href="#menu">Меню</a> 
+                <a class="nav-item" href="#store">Магазин</a> 
                 
             </div>
             <div class="phone">
@@ -35,11 +35,17 @@
                     </a>
                 </div>
                 <div class="store">
-                    <a href="#">
+                    <a href="#" class="cart-icon">
                         <img src="../img/shopping.png" alt="">
                     </a>
-                </div>
+                </div>                
             </div>  
+<!--    
+            <div class="burger-menu">
+                <div class="burger-icon">
+                    <img src="..//img/free-icon-burger-menu-8637657 (2).png" alt="Burger Menu Icon">
+                </div>
+            </div> -->
                       
         </div>
         <div class="header-down">
@@ -83,6 +89,42 @@
 
         </div>
 </div>
+
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Мои заказы</h2>
+        <ul id="cart-items">
+            <!-- Здесь будут отображаться выбранные товары -->
+        </ul>
+        <button id="order-now-btn" class="button">Заказать</button>
+        <button id="clear-cart-btn">Очистить</button>
+    </div>
+</div>
+
+<!-- Второе модальное окно для заполнения данных заказа -->
+<div id="order-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Оформление заказа</h2>
+        <form id="order-form">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" placeholder="Ваш номер телефона" required>
+            <input type="text" id="address" placeholder="Ваш адрес доставки (необязательно)">
+            <select id="payment-method">
+                <option value="cash">Наличными</option>
+                <option value="courier">У курьера</option>
+                <option value="invoice">Выставить счет</option>
+            </select>
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </div>
+</div>
+
+
+
+
 
 <!-- ПРОДОЛЖАЕМ ТУТУТУТ   -->
 

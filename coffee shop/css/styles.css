@@ -139,6 +139,163 @@ body {
     width: 200px; /* Измените значение ширины блока по вашему усмотрению */
 }
 
+
+/* Стили модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+}
+
+.modal-content {
+    background-color: #ffffff; /* Белый фон */
+    margin: 10% auto; /* Отступ сверху и снизу */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Тень */
+    max-width: 500px; /* Максимальная ширина модального окна */
+}
+
+.modal-content h2 {
+    color: #333333; /* Цвет текста заголовка */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.close {
+    color: #aaaaaa; /* Цвет иконки закрытия */
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; /* Позиционируем иконку абсолютно */
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #555555; /* Цвет иконки закрытия при наведении */
+}
+
+.modal-content button {
+    background-color: #a75a13; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста кнопки */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху */
+    display: block; /* Сделать кнопку блочным элементом */
+    margin-left: auto; /* Выравниваем кнопку по центру */
+    margin-right: auto;
+}
+
+.modal-content button:hover {
+    background-color: #893e0f; /* Цвет фона кнопки при наведении */
+}
+
+
+/* Стили для второго модального окна */
+#order-modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+}
+
+#order-modal .modal-content {
+    background-color: #ffffff; /* Белый фон */
+    margin: 10% auto; /* Отступ сверху и снизу */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Тень */
+    max-width: 500px; /* Максимальная ширина модального окна */
+}
+
+#order-modal .modal-content h2 {
+    color: #333333; /* Цвет текста заголовка */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+#order-modal .close {
+    color: #aaaaaa; /* Цвет иконки закрытия */
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; /* Позиционируем иконку абсолютно */
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#order-modal .close:hover {
+    color: #555555; /* Цвет иконки закрытия при наведении */
+}
+
+#order-modal form input,
+#order-modal form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#order-modal form button {
+    background-color: #a75a13; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста кнопки */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#order-modal form button:hover {
+    background-color: #893e0f; /* Цвет фона кнопки при наведении */
+}
+
+
+
+/* Стили для кнопки "Добавить в заказ" */
+.order-btn  {
+    background-color: #4CAF50; /* Зеленый цвет фона */
+    color: white; /* Белый цвет текста */
+    border: none; /* Убираем границы */
+    padding: 8px 16px; /* Поля вокруг текста */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Отображаем как блочный элемент */
+    font-size: 14px; /* Размер текста */
+    margin: 4px; /* Отступы от других элементов */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    border-radius: 4px; /* Скругляем углы */
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+    height: 30px;
+    width: 1px;
+}
+
+/* Стили для кнопки "Добавить в заказ" при наведении курсора */
+.order-btn:hover {
+    background-color: #45a049; /* Темнозеленый цвет фона */
+}
+
+
 .block:last-child {
     margin-right: 0; /* Убираем отступ у последнего блока */
 }

@@ -1,18 +1,18 @@
 /* HTML MENU */
 
 /* Общие стили */
-.menu1 {
-    background-color: #a75a13;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #754a22, #d39b46);
+    min-height: 100vh;
 }
 
 .heading1 {
     text-align: center;
-    color: #333;
+    color: #fff; /* Изменено на белый цвет, чтобы контрастировать с фоном */
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-top: 20px; /* Заменил margin-bottom на margin-top для соответствия фону */
 }
 
 .menu-categories {
@@ -31,19 +31,111 @@
 
 .menu-categories ul li a {
     text-decoration: none;
-    color: #666;
+    color: #ffffff;
     font-size: 20px;
     transition: color 0.3s ease;
 }
 
 .menu-categories ul li a:hover {
-    color: #d39b46;
+    color: #333;
 }
+
+.container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Центрирование содержимого по вертикали */
+}
+
+.menu-wrapper {
+    width: 70%; /* Ширина меню */
+}
+
+.cart-wrapper {
+    width: 30%; /* Ширина корзины */
+    text-align: right; /* Выравнивание корзины по правому краю */
+}
+
+
+
+
+
+
+
+
+/* Стили модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+}
+
+.modal-content {
+    background-color: #ffffff; /* Белый фон */
+    margin: 10% auto; /* Отступ сверху и снизу */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Тень */
+    max-width: 500px; /* Максимальная ширина модального окна */
+}
+
+.modal-content h2 {
+    color: #333333; /* Цвет текста заголовка */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.close {
+    color: #aaaaaa; /* Цвет иконки закрытия */
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; /* Позиционируем иконку абсолютно */
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #555555; /* Цвет иконки закрытия при наведении */
+}
+
+.modal-content button {
+    background-color: #a75a13; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста кнопки */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху */
+    display: block; /* Сделать кнопку блочным элементом */
+    margin-left: auto; /* Выравниваем кнопку по центру */
+    margin-right: auto;
+}
+
+.modal-content button:hover {
+    background-color: #893e0f; /* Цвет фона кнопки при наведении */
+}
+
+
+
+
+
+
+
+
 
 /* Стили для разделов меню */
 .section-heading {
     text-align: center;
-    color: #333;
+    color: #fff; /* Изменено на белый цвет, чтобы контрастировать с фоном */
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -70,8 +162,8 @@
 .menu-item img {
     width: 100%;
     border-radius: 10px;
-    object-fit: cover; /* Растягиваем изображения на всю область блока */
-    height: 200px; /* Высота изображения */
+    object-fit: cover;
+    height: 200px;
 }
 
 .menu-item h3 {
@@ -105,3 +197,65 @@
 .order-btn:hover {
     background-color: #725234;
 }
+
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#order-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#order-form input,
+#order-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#order-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#order-form button:hover {
+    background-color: #45a049;
+}
+

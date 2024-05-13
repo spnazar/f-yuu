@@ -1,68 +1,95 @@
 /* Общие стили */
+@media screen and (min-width: 1251px) and (max-width: 1440px) {
 
-/* Добавим стили для устройств с максимальной шириной экрана 320px (например, iPhone SE) */
-@media screen and (max-width: 320px) {
-    /* Изменяем размеры шрифтов */
+    .burger-menu {
+        display: none;
+    }
+
+    .header-logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .header-down {
+        position: relative;
+        top: -70px;
+    }
+
     .header-title {
         font-size: 22px;
     }
     
     .header-subtitle {
-        font-size: 12px;
+        font-size: 8px;
     }
 
-    /* Изменяем размеры изображений */
-    .header-logo img {
-        width: 80px;
-        height: auto;
+    .header-line {
+        font-size: 16px;
     }
-}
 
+    .nav-item {
+        font-size: 16px;
+    }
 
-/* Добавим стили для мобильных устройств */
-@media screen and (max-width: 480px) {
-    /* Изменяем размеры шрифтов */
-    .header-title {
-        font-size: 24px;
+    .icons img {
+        height: 30px;
+        height: 30px;
     }
-    
-    .header-subtitle {
-        font-size: 14px;
+
+    .header-button {
+        height: 40px;
+        width: 120px;
+        margin-left: 120px;
     }
-    
-    /* Изменяем размеры изображений */
-    .header-logo img {
+
+    .button {
+        height: 30px;
         width: 100px;
+        font-size: 10px;
+    }
+
+    .content-container {
+        position: relative;
+        top: -170px;
+    }
+
+    .block {
+        height: 35px;
+        width: 120px;
+    }
+
+    .block img {
+        max-width: 21%;
         height: auto;
     }
-}
 
-/* Добавим стили для планшетов */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    /* Изменяем размеры шрифтов */
-    .header-title {
-        font-size: 36px;
+    .history-info {
+        margin-right: 70px;
     }
-    
-    .header-subtitle {
-        font-size: 18px;
-    }
-}
 
-/* Добавим стили для устройств с шириной экрана 1024px */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Изменяем размеры шрифтов */
-    .header-title {
-        font-size: 40px;
+    .history-title {
+        font-size: 44px;
     }
-    
-    .header-subtitle {
+
+    .history-desc {
         font-size: 20px;
     }
+
+    .history-img {
+        height: 350px;
+        width: auto;
+    }
+
+    .box {
+        width: 200px;
+    }
 }
 
-/* Добавим стили для устройств с шириной экрана 1440px */
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) and (max-width: 1250px) {
+
+    .burger-menu {
+        display: none;
+    }
 
     .header-logo img {
         height: 80px;
@@ -141,5 +168,179 @@
 
     .box {
         width: 200px;
+    }
+}
+
+/* Добавим стили для устройств с шириной экрана 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .burger-menu {
+        display: none;
+    }
+
+    .header-logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .header-down {
+        position: relative;
+        top: -70px;
+    }
+
+    .header-title {
+        font-size: 22px;
+    }
+    
+    .header-subtitle {
+        font-size: 8px;
+    }
+
+    .header-line {
+        font-size: 12px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+
+    .icons img {
+        height: 20px;
+        height: 20px;
+    }
+
+    .header-button {
+        height: 40px;
+        width: 120px;
+        margin-left: 120px;
+    }
+
+    .button {
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .content-container {
+        position: relative;
+        top: -150px;
+    }
+
+    .block {
+        height: 35px;
+        width: 120px;
+    }
+
+    .block img {
+        max-width: 21%;
+        height: auto;
+    }
+
+    .history-info {
+        margin-right: 70px;
+    }
+
+    .history-title {
+        font-size: 44px;
+    }
+
+    .history-desc {
+        font-size: 20px;
+    }
+
+    .history-img {
+        height: 350px;
+        width: auto;
+    }
+
+    .box {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Изменяем размеры шрифтов */
+    .header-title {
+        font-size: 36px;
+    }
+    
+    .header-subtitle {
+        font-size: 18px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    
+    .burger-icon img {
+        width: 30px; /* Выберите подходящий размер для вашей иконки */
+    }
+}
+
+/* Добавим стили для мобильных устройств */
+@media screen and (max-width: 480px) {
+    /* Изменяем размеры шрифтов */
+    .header-title {
+        font-size: 24px;
+    }
+    
+    .header-subtitle {
+        font-size: 14px;
+    }
+    
+    /* Изменяем размеры изображений */
+    .header-logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    
+    .burger-icon img {
+        width: 25px; /* Выберите подходящий размер для вашей иконки */
+    }
+}
+
+
+/* Добавим стили для устройств с максимальной шириной экрана 320px (например, iPhone SE) */
+@media screen and (max-width: 320px) {
+    /* Изменяем размеры шрифтов */
+    .header-title {
+        font-size: 22px;
+    }
+    
+    .header-subtitle {
+        font-size: 12px;
+    }
+
+    /* Изменяем размеры изображений */
+    .header-logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    
+    .burger-icon img {
+        width: 20px; /* Выберите подходящий размер для вашей иконки */
     }
 }
